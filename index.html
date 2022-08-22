@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags used for SEO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sudoku game demonstrating knolwedge in HTML, CSS and JavaScript." />
+    <meta name="keywords" content="HTML, CSS, JavaScript, JS, Sudoku, Fullstack Developer" />
+    <meta name="author" content="Ana Moreno" />
+    <!-- All header links -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cormorant+Garamond&family=Roboto+Serif:opsz@8..144&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- All header scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+    <!-- Page title -->
+    <title>Sudoku Game</title>
+</head>
+
+<body>
+    <!-- Starting header section -->
+    <header>
+        <!-- content to display if JavaScript is not enabled on device -->
+        <noscript>
+            <h2>To get the most from this website, please enable JavaScript in your browser.</h2>
+        </noscript>
+        <!-- header content to display for selection of setting preference -->
+        <h1>Sudoku Game</h1>
+        <!-- offer level of difficulty -->
+        <div id="setup-game">
+            <div id="diff">
+                <h3>Choose Difficulty: </h3>
+                <label><input id="diff-1" type="radio" name="diff" value="easy" checked> Easy</label>
+                <label><input id="diff-2" type="radio" name="diff" value="medium">Medium</label>
+                <label><input id="diff-3" type="radio" name="diff" value="hard">Hard</label>
+            </div>
+            <!-- offer time selection -->
+            <div id="time">
+                <h3>Choose Time: </h3>
+                <label><input id="time-1" type="radio" name="time" value="three" checked> 3 Min</label>
+                <label><input id="time-2" type="radio" name="time" value="five"> 5 Min</label>
+                <label><input id="time-3" type="radio" name="time" value="ten"> 10 Min</label>
+            </div>
+            <!-- offer theme color -->
+            <div id="theme">
+                <h3>Choose Theme: </h3>
+                <label><input id="theme-1" type="radio" name="theme" value="light" checked>Light</label>
+                <label><input id="theme-2" type="radio" name="theme" value="dark">Dark</label>
+            </div>
+        </div>
+        <button id="start-btn">Begin Game</button>
+    </header>
+    <!-- Starting main section -->
+    <main>
+        <!-- stats to display -->
+        <div id="stats">
+            <p id="timer"></p>
+            <p id="lives"></p>
+        </div>
+        <!-- game board titles -->
+        <div id="game">
+            <div id="board"></div>
+            <div id="number-container" class="hidden">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+    </main>
+    <!-- Starting footer section -->
+    <footer>
+        <!-- copyright content with current year script -->
+        <span>Created By <a href="">Ana Moreno</a> |
+            <script>document.write(new Date().getUTCFullYear());</script> All rights
+            reserved.
+        </span>
+    </footer>
+    <!-- link script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
